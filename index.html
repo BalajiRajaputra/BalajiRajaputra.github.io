@@ -1,7 +1,133 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!doctype html>
+<html lang="en">
+
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Medicaid Reimbursements 2017 Analysis</title>
+		
+	
+
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme"> 
+<!--		<link rel="stylesheet" href="css/reset.css"> 
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Load D3 -->
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+	
+	</head>
+	       <style>
+
+
+
+            .axis {
+                stroke-width: 1px;
+                stroke: white;
+                fill:white
+                font-size: 12px;
+            }
+            .category-name {
+                font-size: 20px;
+                margin: 0 !important;
+            }
+            .key-dot {
+                display: inline-block;
+                height: 12px;
+                margin-right: .5em;
+                width: 12px;
+
+            }
+
+
+            .Dessert { background: #FF6138}
+            .Drink { background: #FFFF9D}
+            .Food { background: #BEEB9F }
+            .Sides{ background: #00A388}
+
+            #categoryLegend{
+                overflow:hidden;
+                font-size: 15px;
+
+            }
+            #backh2{
+                color: antiquewhite;
+            }
+
+            #smallBack{
+                color: navajowhite;
+                font-style: italic;
+            }
+
+
+            .categoryLegend {
+                float:left;
+                margin-right: 1em;
+
+            }
+
+            .area {
+                fill: orange;
+                fill-opacity: 0.6;
+                clip-path: url(#clip);
+            }
+
+            .zoom {
+                cursor: move;
+                fill: none;
+                pointer-events: all;
+            }
+	</style>
+
+	<body>
+<!--		<div class="reveal"> <!--	Reveal --->
+			<div class="slides"> <!-- Slide -->
+				<section>
+					<h1><center> Medicaid Drug Utilization & Reimbursements - Program Year 2017</center></h1>
+					
+				</section>
+                <section>
+                    <section>
+                        <h3>About the Visualization</h3>
+							<small>This visualization was presented by Balaji Rajaputra as the final project for CS 498 Data Visualization. This course is part of Masters in Computer Science (Data Science)
+							at <a href="http://illinois.edu/index.html"> University of Illinois - Urbana Champaign </a> </small>
+                            <p>
+                                 This project visualization is prepared based on the Medicaid utilization of program year 2017 data set. </br>
+								Medicaid provides health coverage to millions of Americans, including eligible low-income adults, children, pregnant women, elderly adults and people with disabilities. Medicaid is administered by states, according to federal requirements. The program is funded jointly by states and the federal government.
+</br></br>
+Drug utilization data are reported by states for covered outpatient drugs that are paid for by state Medicaid agencies since the start of the Medicaid Drug Rebate Program. The data includes state, drug name, National Drug Code, number of prescriptions and dollars reimbursed. Data descriptions and data sets are available at 
+:<a href="https://www.medicaid.gov/medicaid/prescription-drugs/state-drug-utilization-data/state-drug-utilization-data-faq/index.html"> Medicaid.gov. </a> 
+& <a href="https://data.medicaid.gov/State-Drug-Utilization/State-Drug-Utilization-Data-2017/3v5r-x5x9"> The data source. </a>
+                            </p>
+							<h4> 1. Scenes : </h4>
+							The visualization uses hybrid interactive slide structure. The Choropleth map has zoom in/out options and hover over to the circle to see more details via tooltip. On the bar charts, the drop down option is available at the top of the page. By selecting different values from the drop down menu
+							, parameters are changed and annotations are updated to present the new view. When hover over on the bar, the tooltip will provide details of the view
+							</br>
+							<H4> 2. Annotations :</H4>
+							 The block of text provided under each Slide has information that give insight into to the data. Tooltips, legends and labels
+							will help user to understand the visualization. 
+							</br>
+							<H4> 3. Parameters :</H4>
+							 There are 5 main parameters that filters the data and change the scene according to the selection. 
+							 Key paramter values are - Number of Drugs Prescribed, Total medicaid amount reimbrsed, Number of Prescriptions, Units Reimburssed and Reimbursement in each quarter.
+							 The provided drop down menu give the option for user to change the parameter values. 
+								</br> 
+							<H4> 4. Triggers :</H4>	
+							The drop down menu selection triggers the change to the visualization. When the value is changed, the chart will be filtered and immedicately updated to 
+							show view based on new parameters.
+						</br></br></br>
+						<center> <Strong> Move to the <a href="index_GEO.html">Next Page</a> for visualization. </Strong> </center>
+						
+                        <!--    <div class="fragment" data-fragment-index="0" class="navigate-down" style="cursor: pointer;"><img src="images/arrow-down.png" style="border: none; background:none; box-shadow:none;" alt="Arrow Down"></div> -->
+
+
+                        
+				</section>
+			</div> <!-- Slide -->
+
+<!--		</div> <!--	Reveal --->
+	</body>
 </html>

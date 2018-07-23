@@ -1,0 +1,512 @@
+[
+ {
+   "State": "WY",
+   "StateName": "Wyoming",
+   "DistinctcountofProductName": "2526",
+   "Latitude": 43.0001,
+   "Longitude": -107.5001,
+   "MedicaidAmountReimbursed": "3624748.10",
+   "NumberofPrescriptions": "43722",
+   "UnitsReimbursed": "2456988.76"
+ },
+ {
+   "State": "WV",
+   "StateName": "West Virginia",
+   "DistinctcountofProductName": "3182",
+   "Latitude": 38.6301,
+   "Longitude": -80.7301,
+   "MedicaidAmountReimbursed": "591473862.49",
+   "NumberofPrescriptions": "9465763",
+   "UnitsReimbursed": "1274323269.14"
+ },
+ {
+   "State": "WI",
+   "StateName": "Wisconsin",
+   "DistinctcountofProductName": "4339",
+   "Latitude": 44.5001,
+   "Longitude": -90.0001,
+   "MedicaidAmountReimbursed": "1169644615.87",
+   "NumberofPrescriptions": "11820840",
+   "UnitsReimbursed": "805501971.51"
+ },
+ {
+   "State": "WA",
+   "StateName": "Washington",
+   "DistinctcountofProductName": "4135",
+   "Latitude": 47.5001,
+   "Longitude": -120.5001,
+   "MedicaidAmountReimbursed": "1108756187.89",
+   "NumberofPrescriptions": "15543848",
+   "UnitsReimbursed": "791995367.34"
+ },
+ {
+   "State": "VT",
+   "StateName": "Vermont",
+   "DistinctcountofProductName": "3060",
+   "Latitude": 44.1584,
+   "Longitude": -72.7678,
+   "MedicaidAmountReimbursed": "161780799.08",
+   "NumberofPrescriptions": "1539248",
+   "UnitsReimbursed": "93771037.36"
+ },
+ {
+   "State": "VA",
+   "StateName": "Virginia",
+   "DistinctcountofProductName": "6106",
+   "Latitude": 37.7701,
+   "Longitude": -78.2401,
+   "MedicaidAmountReimbursed": "906521109.32",
+   "NumberofPrescriptions": "10693357",
+   "UnitsReimbursed": "696033553.80"
+ },
+ {
+   "State": "UT",
+   "StateName": "Utah",
+   "DistinctcountofProductName": "3426",
+   "Latitude": 39.2501,
+   "Longitude": -111.7501,
+   "MedicaidAmountReimbursed": "189833295.60",
+   "NumberofPrescriptions": "2436397",
+   "UnitsReimbursed": "153532913.81"
+ },
+ {
+   "State": "TX",
+   "StateName": "Texas",
+   "DistinctcountofProductName": "3796",
+   "Latitude": 31.2501,
+   "Longitude": -99.2501,
+   "MedicaidAmountReimbursed": "3372890023.18",
+   "NumberofPrescriptions": "35158463",
+   "UnitsReimbursed": "2390752334.64"
+ },
+ {
+   "State": "TN",
+   "StateName": "Tennessee",
+   "DistinctcountofProductName": "2230",
+   "Latitude": 35.7501,
+   "Longitude": -86.2501,
+   "MedicaidAmountReimbursed": "1028932449.06",
+   "NumberofPrescriptions": "13537262",
+   "UnitsReimbursed": "766384587.93"
+ },
+ {
+   "State": "SD",
+   "StateName": "South Dakota",
+   "DistinctcountofProductName": "3125",
+   "Latitude": 44.5001,
+   "Longitude": -100.2501,
+   "MedicaidAmountReimbursed": "101974785.52",
+   "NumberofPrescriptions": "840129",
+   "UnitsReimbursed": "50993870.52"
+ },
+ {
+   "State": "SC",
+   "StateName": "South Carolina",
+   "DistinctcountofProductName": "2623",
+   "Latitude": 34.0001,
+   "Longitude": -81.0001,
+   "MedicaidAmountReimbursed": "483387505.14",
+   "NumberofPrescriptions": "5942133",
+   "UnitsReimbursed": "345659827.49"
+ },
+ {
+   "State": "RI",
+   "StateName": "Rhode Island",
+   "DistinctcountofProductName": "3403",
+   "Latitude": 41.7501,
+   "Longitude": -71.4901,
+   "MedicaidAmountReimbursed": "218780584.70",
+   "NumberofPrescriptions": "3471692",
+   "UnitsReimbursed": "177426742.31"
+ },
+ {
+   "State": "PA",
+   "StateName": "Pennsylvania",
+   "DistinctcountofProductName": "5249",
+   "Latitude": 40.8601,
+   "Longitude": -77.9001,
+   "MedicaidAmountReimbursed": "2933542191.03",
+   "NumberofPrescriptions": "35379119",
+   "UnitsReimbursed": "2016470233.38"
+ },
+ {
+   "State": "OR",
+   "StateName": "Oregon",
+   "DistinctcountofProductName": "4277",
+   "Latitude": 44.0001,
+   "Longitude": -120.5001,
+   "MedicaidAmountReimbursed": "671127534.77",
+   "NumberofPrescriptions": "10059327",
+   "UnitsReimbursed": "561912695.62"
+ },
+ {
+   "State": "OK",
+   "StateName": "Oklahoma",
+   "DistinctcountofProductName": "3309",
+   "Latitude": 35.5001,
+   "Longitude": -97.5001,
+   "MedicaidAmountReimbursed": "502150050.29",
+   "NumberofPrescriptions": "5872759",
+   "UnitsReimbursed": "398102876.10"
+ },
+ {
+   "State": "OH",
+   "StateName": "Ohio",
+   "DistinctcountofProductName": "5492",
+   "Latitude": 40.2501,
+   "Longitude": -83.001,
+   "MedicaidAmountReimbursed": "3193297923.24",
+   "NumberofPrescriptions": "46051664",
+   "UnitsReimbursed": "2708667171.59"
+ },
+ {
+   "State": "NY",
+   "StateName": "New York",
+   "DistinctcountofProductName": "5746",
+   "Latitude": 43.0001,
+   "Longitude": -75.4901,
+   "MedicaidAmountReimbursed": "6121178965.49",
+   "NumberofPrescriptions": "74808256",
+   "UnitsReimbursed": "3898382426.99"
+ },
+ {
+   "State": "NV",
+   "StateName": "Nevada",
+   "DistinctcountofProductName": "4544",
+   "Latitude": 39.2501,
+   "Longitude": -116.7501,
+   "MedicaidAmountReimbursed": "456697682.65",
+   "NumberofPrescriptions": "6419025",
+   "UnitsReimbursed": "413064565.67"
+ },
+ {
+   "State": "NM",
+   "StateName": "New Mexico",
+   "DistinctcountofProductName": "3002",
+   "Latitude": 34.5001,
+   "Longitude": -106.0001,
+   "MedicaidAmountReimbursed": "413540149.15",
+   "NumberofPrescriptions": "5817057",
+   "UnitsReimbursed": "351291514.18"
+ },
+ {
+   "State": "NJ",
+   "StateName": "New Jersey",
+   "DistinctcountofProductName": "4952",
+   "Latitude": 40.1601,
+   "Longitude": -74.4901,
+   "MedicaidAmountReimbursed": "1309826677.99",
+   "NumberofPrescriptions": "18660003",
+   "UnitsReimbursed": "991270849.18"
+ },
+ {
+   "State": "NH",
+   "StateName": "New Hampshire",
+   "DistinctcountofProductName": "2047",
+   "Latitude": 43.6601,
+   "Longitude": -71.4901,
+   "MedicaidAmountReimbursed": "95271017.50",
+   "NumberofPrescriptions": "1132579",
+   "UnitsReimbursed": "63751709.21"
+ },
+ {
+   "State": "NE",
+   "StateName": "Nebraska",
+   "DistinctcountofProductName": "4252",
+   "Latitude": 41.5001,
+   "Longitude": -99.7501,
+   "MedicaidAmountReimbursed": "159142116.78",
+   "NumberofPrescriptions": "2640100",
+   "UnitsReimbursed": "172885563.40"
+ },
+ {
+   "State": "ND",
+   "StateName": "North Dakota",
+   "DistinctcountofProductName": "2203",
+   "Latitude": 47.5001,
+   "Longitude": -100.0001,
+   "MedicaidAmountReimbursed": "51690658.22",
+   "NumberofPrescriptions": "790525",
+   "UnitsReimbursed": "42881039.99"
+ },
+ {
+   "State": "NC",
+   "StateName": "North Carolina",
+   "DistinctcountofProductName": "2712",
+   "Latitude": 35.5001,
+   "Longitude": -80.0001,
+   "MedicaidAmountReimbursed": "1797256481.36",
+   "NumberofPrescriptions": "16896188",
+   "UnitsReimbursed": "1174065851.55"
+ },
+ {
+   "State": "MT",
+   "StateName": "Montana",
+   "DistinctcountofProductName": "2800",
+   "Latitude": 47.0001,
+   "Longitude": -109.7501,
+   "MedicaidAmountReimbursed": "208975938.96",
+   "NumberofPrescriptions": "2469883",
+   "UnitsReimbursed": "141624370.21"
+ },
+ {
+   "State": "MS",
+   "StateName": "Mississippi",
+   "DistinctcountofProductName": "2846",
+   "Latitude": 32.7501,
+   "Longitude": -89.7501,
+   "MedicaidAmountReimbursed": "440023254.21",
+   "NumberofPrescriptions": "5677634",
+   "UnitsReimbursed": "335764199.79"
+ },
+ {
+   "State": "MO",
+   "StateName": "Missouri",
+   "DistinctcountofProductName": "2819",
+   "Latitude": 38.2501,
+   "Longitude": -92.5001,
+   "MedicaidAmountReimbursed": "1228982994.71",
+   "NumberofPrescriptions": "12378965",
+   "UnitsReimbursed": "734787615.42"
+ },
+ {
+   "State": "MN",
+   "StateName": "Minnesota",
+   "DistinctcountofProductName": "2866",
+   "Latitude": 46.2501,
+   "Longitude": -94.2501,
+   "MedicaidAmountReimbursed": "896218657.39",
+   "NumberofPrescriptions": "12658064",
+   "UnitsReimbursed": "781584477.65"
+ },
+ {
+   "State": "MI",
+   "StateName": "Michigan",
+   "DistinctcountofProductName": "2918",
+   "Latitude": 43.1045,
+   "Longitude": -84.6165,
+   "MedicaidAmountReimbursed": "2064807044.13",
+   "NumberofPrescriptions": "29811983",
+   "UnitsReimbursed": "1574597760.25"
+ },
+ {
+   "State": "ME",
+   "StateName": "Maine",
+   "DistinctcountofProductName": "2147",
+   "Latitude": 45.5001,
+   "Longitude": -69.2401,
+   "MedicaidAmountReimbursed": "222087181.25",
+   "NumberofPrescriptions": "2372035",
+   "UnitsReimbursed": "146085510.07"
+ },
+ {
+   "State": "MD",
+   "StateName": "Maryland",
+   "DistinctcountofProductName": "3799",
+   "Latitude": 39.4968,
+   "Longitude": -77.0834,
+   "MedicaidAmountReimbursed": "1120350994.66",
+   "NumberofPrescriptions": "14197401",
+   "UnitsReimbursed": "915931606.20"
+ },
+ {
+   "State": "MA",
+   "StateName": "Massachusetts",
+   "DistinctcountofProductName": "4025",
+   "Latitude": 42.3301,
+   "Longitude": -71.8201,
+   "MedicaidAmountReimbursed": "1378799194.44",
+   "NumberofPrescriptions": "15977502",
+   "UnitsReimbursed": "865622197.74"
+ },
+ {
+   "State": "LA",
+   "StateName": "Louisiana",
+   "DistinctcountofProductName": "2861",
+   "Latitude": 30.6935,
+   "Longitude": -92.2411,
+   "MedicaidAmountReimbursed": "1046648185.58",
+   "NumberofPrescriptions": "18582778",
+   "UnitsReimbursed": "980092033.62"
+ },
+ {
+   "State": "KY",
+   "StateName": "Kentucky",
+   "DistinctcountofProductName": "3143",
+   "Latitude": 37.7901,
+   "Longitude": -84.8701,
+   "MedicaidAmountReimbursed": "1133653768.99",
+   "NumberofPrescriptions": "21323553",
+   "UnitsReimbursed": "1127553312.24"
+ },
+ {
+   "State": "KS",
+   "StateName": "Kansas",
+   "DistinctcountofProductName": "4151",
+   "Latitude": 38.5001,
+   "Longitude": -98.5001,
+   "MedicaidAmountReimbursed": "325677705.25",
+   "NumberofPrescriptions": "4013879",
+   "UnitsReimbursed": "257216250.48"
+ },
+ {
+   "State": "IN",
+   "StateName": "Indiana",
+   "DistinctcountofProductName": "4857",
+   "Latitude": 40.0001,
+   "Longitude": -86.2501,
+   "MedicaidAmountReimbursed": "1388079005.82",
+   "NumberofPrescriptions": "15466850",
+   "UnitsReimbursed": "924006746.55"
+ },
+ {
+   "State": "IL",
+   "StateName": "Illinois",
+   "DistinctcountofProductName": "4544",
+   "Latitude": 40.0001,
+   "Longitude": -89.2501,
+   "MedicaidAmountReimbursed": "1792826066.29",
+   "NumberofPrescriptions": "27519740",
+   "UnitsReimbursed": "1464410860.20"
+ },
+ {
+   "State": "ID",
+   "StateName": "Idaho",
+   "DistinctcountofProductName": "1801",
+   "Latitude": 44.0739,
+   "Longitude": -114.5421,
+   "MedicaidAmountReimbursed": "191983110.92",
+   "NumberofPrescriptions": "2276048",
+   "UnitsReimbursed": "135066312.23"
+ },
+ {
+   "State": "IA",
+   "StateName": "Iowa",
+   "DistinctcountofProductName": "3697",
+   "Latitude": 42.0001,
+   "Longitude": -93.5001,
+   "MedicaidAmountReimbursed": "294953349.40",
+   "NumberofPrescriptions": "4127396",
+   "UnitsReimbursed": "250855803.18"
+ },
+ {
+   "State": "HI",
+   "StateName": "Hawaii",
+   "DistinctcountofProductName": "2569",
+   "Latitude": 20.7901,
+   "Longitude": -156.3401,
+   "MedicaidAmountReimbursed": "155041767.87",
+   "NumberofPrescriptions": "2346027",
+   "UnitsReimbursed": "631166811.84"
+ },
+ {
+   "State": "GA",
+   "StateName": "Georgia",
+   "DistinctcountofProductName": "4444",
+   "Latitude": 32.7501,
+   "Longitude": -83.5001,
+   "MedicaidAmountReimbursed": "1143579477.73",
+   "NumberofPrescriptions": "16824711",
+   "UnitsReimbursed": "1070863506.41"
+ },
+ {
+   "State": "FL",
+   "StateName": "Florida",
+   "DistinctcountofProductName": "3118",
+   "Latitude": 28.4201,
+   "Longitude": -81.5501,
+   "MedicaidAmountReimbursed": "2941873940.98",
+   "NumberofPrescriptions": "31222467",
+   "UnitsReimbursed": "2054881800.49"
+ },
+ {
+   "State": "DE",
+   "StateName": "Delaware",
+   "DistinctcountofProductName": "3586",
+   "Latitude": 38.6716,
+   "Longitude": -75.4165,
+   "MedicaidAmountReimbursed": "2963721.04",
+   "NumberofPrescriptions": "2262721",
+   "UnitsReimbursed": "117699369.82"
+ },
+ {
+   "State": "DC",
+   "StateName": "#N/A",
+   "DistinctcountofProductName": "2739",
+   "Latitude": 38.9101,
+   "Longitude": -77.0001,
+   "MedicaidAmountReimbursed": "285846499.19",
+   "NumberofPrescriptions": "2149990",
+   "UnitsReimbursed": "111873037.95"
+ },
+ {
+   "State": "CT",
+   "StateName": "Connecticut",
+   "DistinctcountofProductName": "4874",
+   "Latitude": 41.6601,
+   "Longitude": -72.6601,
+   "MedicaidAmountReimbursed": "1216402725.95",
+   "NumberofPrescriptions": "9307839",
+   "UnitsReimbursed": "536524650.46"
+ },
+ {
+   "State": "CO",
+   "StateName": "Colorado",
+   "DistinctcountofProductName": "2559",
+   "Latitude": 39.0001,
+   "Longitude": -105.5001,
+   "MedicaidAmountReimbursed": "905023576.23",
+   "NumberofPrescriptions": "7930743",
+   "UnitsReimbursed": "498904100.86"
+ },
+ {
+   "State": "CA",
+   "StateName": "California",
+   "DistinctcountofProductName": "4934",
+   "Latitude": 37.2501,
+   "Longitude": -119.7501,
+   "MedicaidAmountReimbursed": "7160615276.53",
+   "NumberofPrescriptions": "86100849",
+   "UnitsReimbursed": "6925820923.52"
+ },
+ {
+   "State": "AZ",
+   "StateName": "Arizona",
+   "DistinctcountofProductName": "2738",
+   "Latitude": 34.5001,
+   "Longitude": -111.5001,
+   "MedicaidAmountReimbursed": "1121780420.19",
+   "NumberofPrescriptions": "15678629",
+   "UnitsReimbursed": "864803445.14"
+ },
+ {
+   "State": "AR",
+   "StateName": "Arkansas",
+   "DistinctcountofProductName": "1779",
+   "Latitude": 34.7501,
+   "Longitude": -92.5001,
+   "MedicaidAmountReimbursed": "365679482.45",
+   "NumberofPrescriptions": "4948646",
+   "UnitsReimbursed": "288429733.42"
+ },
+ {
+   "State": "AL",
+   "StateName": "Alabama",
+   "DistinctcountofProductName": "3497",
+   "Latitude": 32.7501,
+   "Longitude": -86.7501,
+   "MedicaidAmountReimbursed": "678736778.93",
+   "NumberofPrescriptions": "7446730",
+   "UnitsReimbursed": "463567016.17"
+ },
+ {
+   "State": "AK",
+   "StateName": "Alaska",
+   "DistinctcountofProductName": "1958",
+   "Latitude": 64.0001,
+   "Longitude": -150.0001,
+   "MedicaidAmountReimbursed": "137516860.22",
+   "NumberofPrescriptions": "1385280",
+   "UnitsReimbursed": "83959916.05"
+ }
+]
