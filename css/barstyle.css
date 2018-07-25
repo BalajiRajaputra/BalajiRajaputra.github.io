@@ -1,8 +1,15 @@
+
 #chart{
+
+	background-color: white;
+    /*background-color: #606060; */
+    margin: 25px auto;
+}
+/*#chart{
     background-color: blue;
 	background-color: #606060;
     margin: 25px auto;
-}
+}*/
 
 .bar{
     display: inline-block;
