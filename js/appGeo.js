@@ -111,8 +111,7 @@ d3.json( 'data/Med.json', function( zombie_data ){
                 if( us_e.properties.name !== z_e.StateName ){
                     return null;
                 }
-                //us_data.features[us_i].properties.num   =   Math.sqrt(parseInt(z_e.MedicaidAmountReimbursed) * 0.00000005) ;
-				us_data.features[us_i].properties.num   =   parseInt(z_e.MedicaidAmountReimbursed);
+ 				us_data.features[us_i].properties.num   =   parseInt(z_e.MedicaidAmountReimbursed);
 				
             });
         })
@@ -124,27 +123,14 @@ d3.json( 'data/Med.json', function( zombie_data ){
             .attr( 'd', path )
 			.style("stroke", "#fff")
 			.style("stroke-width", "1")
-			.style("fill", function(d,i) {  //console.log ('d.properties.num   ----'+ Math.sqrt(parseInt(d.properties.num) * 0.00000005))
-			//return ramp(d.properties.num)
+			.style("fill", function(d,i) {  
 			return ramp(Math.sqrt(parseInt(d.properties.num) * 0.00000005))
 			})
 			.append( 'title' )
             .text(function(d){
-							
                return "State - " + d.properties.name + "  &  Total Medicare Amount Reimbursed - $" + d.properties.num;
-			   
-				
 			})
 			.append("title");
-			
-	  		  
-       /*     .attr( 'fill', function( d ){
-                var num         =   d.properties.num;
-				//console.log (' StateName + d.properties.num  -' + d.StateName +' - '+ d.properties.num);
-                return num ? color( num ) : '#ddd';
-            })*/
- 			// **added new code for state name 
-	
 
         //Draw_State();
 		
@@ -220,7 +206,6 @@ function Draw_State(){
 		  .append( 'title' )
            .text(function(d){
                return "State - " + d.StateName + " & Total Medicare Amount Reimbursed - $" + d.MedicaidAmountReimbursed;
-			   //return "State - " + d.StateName;
            });
 		   
 		   

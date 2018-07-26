@@ -1,4 +1,4 @@
-﻿Quarter	State	StateName	NumberOfDrugsPrescribed	Latitude	Longitude	MedicaidAmountReimbursed	NumberofPrescriptions	UnitsReimbursed
+﻿Quarter	State	StateName	NumberOfDrugsPrescribed	Latitude	Longitude	MedicaidAmountReimbursed	NumberOfPrescriptions	NumberOfUnitsReimbursed
 4	WY	Wyoming	1927	43.0001	-107.5001	9189001.48	109374	6371957.101
 3	WY	Wyoming	1961	43.0001	-107.5001	8797703.63	101845	5547366.323
 2	WY	Wyoming	2003	43.0001	-107.5001	8985325.9	110496	6170461.706

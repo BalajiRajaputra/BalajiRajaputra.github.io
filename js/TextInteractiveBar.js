@@ -4,35 +4,27 @@ var svg = d3.select("svg"),
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom;
 
-
-
-	
-//var x = d3.scaleBand().rangeRound([-7, width]),
-// = d3.scaleLinear().rangeRound([height, 0]);
-var x = d3.scaleBand().range([-7, width]),
+var x = d3.scaleBand().range([0, width]),
     y = d3.scaleLinear().range([height, 0]);
-	
+		
+		
 
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.tsv("data/MedByQ.tsv", function(d) {
-  //d.MedicaidAmountReimbursed = +d.MedicaidAmountReimbursed;
+d3.tsv("data/MedUtils1.tsv", function(d) {
   return d;
 }, function(error, data) {
   if (error) throw error;
 
   // filter year/quarter
-	var data = data.filter(function(d){return d.Quarter == '4';});
+	var data = data.filter(function(d){return d;});
 	// Get every column value
 	var elements = Object.keys(data[0])
 		.filter(function(d){
-			return ((d != "State") & (d != "StateName")& (d != "Latitude")& (d != "Longitude")& (d != "Quarter") & (d != "MedicaidAmountReimbursed"));
+			return ((d != "State") & (d != "StateName")& (d != "Latitude")& (d != "Longitude") & (d != "MedicaidAmountReimbursed"));
 		});
-
-				
-  //var elements = document.getElementById("data").innerHTML = (data[0]);
   var selection = elements[0];
   
   x.domain(data.map(function(d) { return d.State; }));
@@ -44,7 +36,6 @@ d3.tsv("data/MedByQ.tsv", function(d) {
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
-	  //label for the X axis
 	  
 	  svg.append("text")             
       .attr("transform",  "translate(" + (width/2) + " ," + (height + margin.top + 35) + ")")
@@ -65,16 +56,12 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 	  .call(d3.axisLeft(y));
 	//  .call(d3.axisLeft(y).ticks(8).tickSizeInner([-width])); //This line shows the bars
 	
-	//.call(d3.axisLeft(y).ticks(8).tickFormat(function(d) { return parseInt(d) + "M"; }).tickSizeInner([-width]));
-	//  .call(d3.axisLeft(y).ticks(10, "s"))
-	
   g.selectAll(".bar")
     .data(data)
     .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d, i) { return (width / data.length) * i ; })
       .attr("y", function(d) { return y(+d[selection]); })
-	 // .attr("width", x.bandwidth()/data.length)
 	  .attr("width", 15)
       .attr("height", function(d) {  return height - y(+d[selection]); })
 	  .append("title")
@@ -93,23 +80,23 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 		
 		y.domain([0, d3.max(data, function(d) { return +d[selection.value]; })]);
 	
+	
+		//d3.axisLeft(y);
+		
+		
 		d3.select("g")
 		.attr("class", "axis axis--y")
 		.transition()
 		.call(d3.axisLeft(y));
 		//.call(d3.axisLeft(y).ticks(8).tickSizeInner([-width]));	
 	
-		x.domain(data.map(function(d) { 
-		//console.log('d.state --- ' + d.state);
-		return d.State; }));
+		x.domain(data.map(function(d) { return d.State; }));
 
 	g.append("g")
       .attr("class", "axis axis--x")
+	  //.transition()
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
-	
-	
-		//yAxis.scale(y);
 		
 		d3.selectAll(".bar")
            		.transition()
@@ -122,7 +109,7 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 				.attr("y", function(d){
 					return y(+d[selection.value]);
 				})
-           		.duration(2000)
+           		.duration(2500)
            		.select("title")
            		.text(function(d){
 					
@@ -145,17 +132,12 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 	  
 	 .on( 'mouseover', function(d) {
 		d3.select( '#tooltip')
-			//.style( 'middle' , x + "px" )
 			.style("top", (event.pageY-10)+"px")
-			//.style( 'middle', y + "px" )
 			.style("left",(event.pageX+10)+"px")
 			.style( 'display', 'block' )
 			.html(('State Name  : ' + d.StateName) + "<br>" + d[selection] + "Medicaid Amount Reimbursed : $" + d[selection.value]
 					+ "<br>" + ('Number Of Prescriptions : ' + data.NumberofPrescriptions ) + "<br>" + ('Distinct Number of Drugs Prescribed : ' + d.DistinctcountofProductName ) 
 					+ "<br>" + ('Number Of Units Reimbursed : ' + d.UnitsReimbursed ));
-			//.text( 'Total Medicaid Amount Reimbursed -- $' + d.MedicaidAmountReimbursed + "\n" + ' State Name :' + d.StateName  );
-			
-			
 	})
 	
 	.on( 'mouseout', function(){

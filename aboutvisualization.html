@@ -14,103 +14,57 @@
 		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 	
 	</head>
-	       <style>
-
-
-
-            .axis {
-                stroke-width: 1px;
-                stroke: white;
-                fill:white
-                font-size: 12px;
-            }
-            .category-name {
-                font-size: 20px;
-                margin: 0 !important;
-            }
-            .key-dot {
-                display: inline-block;
-                height: 12px;
-                margin-right: .5em;
-                width: 12px;
-
-            }
-
-
-            .Dessert { background: #FF6138}
-            .Drink { background: #FFFF9D}
-            .Food { background: #BEEB9F }
-            .Sides{ background: #00A388}
-
-            #categoryLegend{
-                overflow:hidden;
-                font-size: 15px;
-
-            }
-            #backh2{
-                color: antiquewhite;
-            }
-
-            #smallBack{
-                color: navajowhite;
-                font-style: italic;
-            }
-
-
-            .categoryLegend {
-                float:left;
-                margin-right: 1em;
-
-            }
-
-            .area {
-                fill: orange;
-                fill-opacity: 0.6;
-                clip-path: url(#clip);
-            }
-
-            .zoom {
-                cursor: move;
-                fill: none;
-                pointer-events: all;
-            }
-	</style>
 
 	<body>
-<!--		<div class="reveal"> <!--	Reveal --->
-			<div class="slides"> <!-- Slide -->
+			<div class="slides"> 
                 <section>
-                    <section><br><br><br><br>
+                    <section><br><br><br>
                         <center><h2>About the Visualization</h2> </center>
-						<br><br>
+						<br>
 							</p>
 							<h3> 1. Scenes : </h3>
-							 The visualization uses hybrid interactive slide structure. This visualization has 1 choropleth and 2 bar charts. The Choropleth map has zoom in/out options and user can hover over to the state to see more details via tooltip. The legend will help user to understand an overview of program utilization.
-							 On the bar charts, the drop down option is available at the top of the page. By selecting different values from the drop down menu
-							, parameters are changed and annotations are updated to present the new view. When hover over on the bar, the tooltip will provide details of the view.
-							</br>
+							<p align ="justify">
+							<ul>
+							 <li>The visualization uses hybrid interactive slide structure. This visualization has 1 choropleth and 2 bar charts. </li>
+							 <li>The Choropleth map provides an overview of the Medicaid dug utilization for program year. </li>
+							 <li>The map has zoom in/out options and user can hover over to the state to see more details via tooltip. The legend will help user to understand an overview of program utilization.</li>
+							 <li>On the bar charts, the drop down option is available at the top of the page, it allows to pass different paramters for interactive visualization
+							 <li>By selecting different values from the drop down menu, parameters are changed and annotations are updated to present the new view. Hover over on the bar to find details</li>
+							</ul>
+							</p>
+							
 							<h3> 2. Annotations :</h3>
-							 The block of text provided under each Slide has information that give insight into to the data. Tooltips, legend and labels
-							will help user to understand the scene. 
-							</br>
+							<p align ="justify">
+							 <ul>
+							 <li>The block of text provided under each chart has information that give insight into to the data. </li>
+							 <li>Tooltips, legend and labels will also help user to understand the visualization. </il>
+							</ul>
+							</p>
+							
 							<h3> 3. Parameters :</h3>
-							 There are 5 main parameters that filters the data and change the scene according to the selection. 
-							 Key paramter values are - Number of Drugs Prescribed, Total Medicaid Amount Reimbrsed, Number of Prescriptions, Units Reimbursed and Reimbursements by each quarter.
-							 The provided drop down menu give the option for user to change the parameter values. 
-								</br> 
-							<h3> 4. Triggers :</h3>	
-							The drop down menu selection triggers the change to the visualization. When the value is changed, the chart will be filtered and immedicately updated to 
-							show view based on new parameters.
-						</br></br></br>
-						<!-- <h3><center> <Strong> Move to the <a href="index_GEO.html">Next Scene</a> for visualization. </Strong> </center></h3> -->
+							<p align ="justify">
+							 <ul>
+							 <li>There are 5 main parameters on bar charts that filters the data and change the scene according to the selection.</li>
+							 <li>Key paramter values are - Number of Drugs Prescribed, Number of Prescriptions, Number of Units Reimbursed and Reimbursements by each quarter.</li>
+							 <li>The drop down menu provide an option for user to pass different parameter values to reflect on the interactive visualization.</li>
+							 </ul>
+							</p>
+							 
+							<h3> 4. Triggers :</h3>
+							<p align ="justify">							
+							<ul>
+							<li>The drop down menu selection triggers the change to the visualization. </li>
+							<li>When the value is changed, the chart will be filtered and immedicately updated to show new view based on new parameters.</li>
+							</ul>
+							</p>
+						<br>
+						<!--<center> <Strong> <button onclick="location.href = 'index.html';" id="myButton" class="float-left submit-button" >Home</button></Strong> <button onclick="location.href = 'index_GEO.html';" id="myButton" class="float-left submit-button" >Next Scene</button></Strong>  </center> -->
 						<h3 align = "center"> <a href="index.html"> Home </a>  |  <a href="index_GEO.html">Next Scene</a> </h3> </center>
-                        <!--    <div class="fragment" data-fragment-index="0" class="navigate-down" style="cursor: pointer;"><img src="images/arrow-down.png" style="border: none; background:none; box-shadow:none;" alt="Arrow Down"></div> -->
+                        <!--<div class="fragment" data-fragment-index="0" class="navigate-down" style="cursor: pointer;"><img src="images/arrow-down.png" style="border: none; background:none; box-shadow:none;" alt="Arrow Down"></div> -->
 
 
                         
 				</section>
-			</div> <!-- Slide -->
-
-<!--		</div> <!--	Reveal --->
+			</div>
 	</body>
 </html>
