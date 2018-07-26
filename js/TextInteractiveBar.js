@@ -5,9 +5,13 @@ var svg = d3.select("svg"),
     height = +svg.attr("height") - margin.top - margin.bottom;
 
 
+
 	
-var x = d3.scaleBand().rangeRound([-7, width]),
-    y = d3.scaleLinear().rangeRound([height, 0]);
+//var x = d3.scaleBand().rangeRound([-7, width]),
+// = d3.scaleLinear().rangeRound([height, 0]);
+var x = d3.scaleBand().range([-7, width]),
+    y = d3.scaleLinear().range([height, 0]);
+	
 
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -24,11 +28,11 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 	// Get every column value
 	var elements = Object.keys(data[0])
 		.filter(function(d){
-			return ((d != "State") & (d != "StateName")& (d != "Latitude")& (d != "Longitude")& (d != "Quarter"));
+			return ((d != "State") & (d != "StateName")& (d != "Latitude")& (d != "Longitude")& (d != "Quarter") & (d != "MedicaidAmountReimbursed"));
 		});
 
-		
-  //var elements = Object.keys(data[0]);
+				
+  //var elements = document.getElementById("data").innerHTML = (data[0]);
   var selection = elements[0];
   
   x.domain(data.map(function(d) { return d.State; }));
@@ -47,6 +51,14 @@ d3.tsv("data/MedByQ.tsv", function(d) {
       .style("text-anchor", "middle")
       .text("State");
 
+	svg.append("text")
+	  .transition()
+      .attr("transform", "rotate(-90)")
+      .attr("y", 90)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "end")
+      .text("Value");
+
 
   g.append("g")
       .attr("class", "axis axis--y")
@@ -55,28 +67,23 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 	
 	//.call(d3.axisLeft(y).ticks(8).tickFormat(function(d) { return parseInt(d) + "M"; }).tickSizeInner([-width]));
 	//  .call(d3.axisLeft(y).ticks(10, "s"))
-	svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 95)
-      .attr("dy", "0.30em")
-      .attr("text-anchor", "end");
-      //.text(+d[selection]);
-
+	
   g.selectAll(".bar")
     .data(data)
     .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d, i) { return (width / data.length) * i ; })
       .attr("y", function(d) { return y(+d[selection]); })
-	  .attr("width", x.bandwidth()/data.length)
+	 // .attr("width", x.bandwidth()/data.length)
+	  .attr("width", 15)
       .attr("height", function(d) {  return height - y(+d[selection]); })
 	  .append("title")
 		.text(function(d){
 			return ' '+ d.StateName + " :  " +d[selection];
 		});
+	
+		  
 	 
-	  
-	 //console.log('d.state bbbbb  --- ' + +d[selection.value]);
 	 
 	var selector = d3.select("#drop")
     	.append("select")
@@ -93,14 +100,15 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 		//.call(d3.axisLeft(y).ticks(8).tickSizeInner([-width]));	
 	
 		x.domain(data.map(function(d) { 
-		console.log('d.state --- ' + d.state);
+		//console.log('d.state --- ' + d.state);
 		return d.State; }));
 
 	g.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
-		
+	
+	
 		//yAxis.scale(y);
 		
 		d3.selectAll(".bar")
@@ -122,6 +130,7 @@ d3.tsv("data/MedByQ.tsv", function(d) {
            		});
 		})
 	
+	
 	selector.selectAll("option")
       .data(elements)
       .enter().append("option")
@@ -131,6 +140,8 @@ d3.tsv("data/MedByQ.tsv", function(d) {
       .text(function(d){
         return d;
       })
+	  
+	  
 	  
 	 .on( 'mouseover', function(d) {
 		d3.select( '#tooltip')
@@ -152,5 +163,8 @@ d3.tsv("data/MedByQ.tsv", function(d) {
 			.style( 'display' ,'none')
 		
 	});
+	
+	
+	
 });
 

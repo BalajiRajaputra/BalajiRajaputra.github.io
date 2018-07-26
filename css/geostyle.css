@@ -1,6 +1,6 @@
 #chart{
     width: 880px;
-    height: 600px;
+    height: 540px;
 	background-color: white;
     /*background-color: #606060; */
     margin: 25px auto;
@@ -35,7 +35,7 @@ body {
 .legend {
 	position:absolute;
 	left:1080px;
-	top:290px;
+	top:250px;
 }
 
 .axis text {

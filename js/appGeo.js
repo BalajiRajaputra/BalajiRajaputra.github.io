@@ -1,6 +1,6 @@
 // Width and height
 var chart_width     =   880;
-var chart_height    =   600;
+var chart_height    =   540;
 var color           =   d3.scaleQuantize().range([
     'rgb(255,245,240)', 'rgb(254,224,210)', 'rgb(252,187,161)',
     'rgb(252,146,114)', 'rgb(251,106,74)', 'rgb(239,59,44)',
@@ -65,7 +65,7 @@ var map             =   svg.append( 'g' )
     .call(
         zoom_map.transform,
         d3.zoomIdentity
-            .translate( chart_width / 2.2, chart_height / 2.3 )
+            .translate( chart_width / 2.2, chart_height / 2.1 )
             .scale( 1 )
     );
 

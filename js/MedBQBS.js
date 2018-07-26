@@ -70,7 +70,8 @@ d3.tsv("data/MedBQBS1.tsv", function(d) {
       .attr("class", "bar")
       .attr("x", function(d, i) { return (width / data.length) * i ; })
       .attr("y", function(d) { return y(+d[selection]); })
-	  .attr("width", x.bandwidth()/data.length)
+	//  .attr("width", x.bandwidth()/data.length)
+	  .attr("width", 15)
       .attr("height", function(d) {  return height - y(+d[selection]); })
 	  .append("title")
 		.text(function(d){
