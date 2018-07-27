@@ -1,6 +1,6 @@
 // Width and height
 var chart_width     =   880;
-var chart_height    =   540;
+var chart_height    =   600;
 var color           =   d3.scaleQuantize().range([
     'rgb(255,245,240)', 'rgb(254,224,210)', 'rgb(252,187,161)',
     'rgb(252,146,114)', 'rgb(251,106,74)', 'rgb(239,59,44)',
@@ -22,6 +22,16 @@ var svg             =   d3.select("#chart")
     .append("svg")
     .attr("width", chart_width)
     .attr("height", chart_height);
+	
+	
+	svg.append("text")
+        .attr("x", (chart_width / 2))             
+        .attr("y", 0 - (chart_height / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text("Value vs Date Graph")
+		
 
 var zoom_map        =   d3.zoom()
     .scaleExtent([ 0.5, 3.0 ])
@@ -61,11 +71,11 @@ var barTooltip = d3.select("body").append("div")
 		
 var map             =   svg.append( 'g' )
     .attr( 'id', 'map' )
-    .call( zoom_map )
+  //  .call( zoom_map )
     .call(
         zoom_map.transform,
         d3.zoomIdentity
-            .translate( chart_width / 2.2, chart_height / 2.1 )
+            .translate( chart_width / 2, chart_height / 2 )
             .scale( 1 )
     );
 
@@ -132,7 +142,7 @@ d3.json( 'data/Med.json', function( zombie_data ){
 			})
 			.append("title");
 
-        //Draw_State();
+        
 		
     });
 	
@@ -167,7 +177,8 @@ d3.json( 'data/Med.json', function( zombie_data ){
 			.attr("height", h)
 			.style("fill", "url(#gradient)")
 			.attr("transform", "translate(0,10)");
-
+		
+		
 		var y = d3.scaleLinear()
 			.range([h, 0])
 			.domain([minVal1, maxVal1]);
@@ -182,34 +193,4 @@ d3.json( 'data/Med.json', function( zombie_data ){
 	
 });
 
-function Draw_State(){
-    d3.json( 'data/Med.json', function( State_data ){
-        map.selectAll("circle")
-            .data(State_data)
-            .enter()
-            .append( "circle" )
-            .style( "fill", "#9D497A" )
-		   // .style( "fill", "steelblue" )
-            .style( "opacity", 0.8 )
-            .attr( 'cx', function( d ){
-				
-                return projection([d.Longitude, d.Latitude])[0];
-				
-            })
-            .attr( 'cy', function( d ){
-                return projection([d.Longitude, d.Latitude])[1];
-            })
-            .attr( 'r', function(d){
-                return Math.sqrt(parseInt(d.MedicaidAmountReimbursed) * 0.00000008 );
-            })
-          
-		  .append( 'title' )
-           .text(function(d){
-               return "State - " + d.StateName + " & Total Medicare Amount Reimbursed - $" + d.MedicaidAmountReimbursed;
-           });
-		   
-		   
-			   
-    });
-}
 

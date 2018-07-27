@@ -2,31 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>D3 Bar Chart</title>
     <link rel="stylesheet" type="text/css" href="css/barstyle.css">
 	<link rel="stylesheet" href="css/theme/sky.css" id="theme"> 
+   <style>
+Header {
+    position: absolute;
+    left: 540px;
+    top: 0px;
+}
+dropP {
+    position: absolute;
+    left: 980px;
+    top: 30px;
+}
+
+text {
+    position: absolute;
+    left: 200px;
+    top: 540px;
+}
+
+Scene {
+    position: absolute;
+    left: 200px;
+    top: 45px;
+}
+</style>
+	
 </head>
 <body>
-    <div id="chart"></div>
+<Header><h2> Drug Utilization </h2> </Header>
+  
 	<div id="tooltip"></div>
-	<div id="drop" align=center></div> 
-	<svg align="right" width="960" height="480"></svg> 
+	<dropP> <div id="drop" ></div> </dropP>
+	<Scene> <svg align="center" width="960" height="480"></svg> </Scene>
     <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
-    <script src="js/TextInteractiveBar.js"></script> 
-
+     <script src="js/TextInteractiveBar.js"></script> 
+	
+<text>
 <p style="text-align:justify;" style="font-family:arial;"> 
 	<font size="3">
 		Above scene provide details of Distinct Number of Drugs Prescribed, Number of Presciptions and Number of Units reimbursed 
 		to each state for Medicaid program year 2017. <br>
-		The chart has 3 parameters to choose. Select different values from the drop down menu at the top of the scene to trigger an interactive visualization. Hover over on the bar to find numbers for each state. <br> 
+		The chart has 3 parameters to choose. Select different values from the drop down menu at the top of the scene to trigger an interactive visualization. <br>
+		Hover over on the bar to find numbers for each state. <br> 
+			<nav>
 				<ul>
 					<li> Number of Drugs Prescribed - This parameter shows total distinct number of drugs prescibed by health care providers.</li>
 					<li> Number of prescriptions - This parameter is to show total number of prescipotions by health care providers.</li>
 					<li> Number of Units Reimbursed - This parameter provide details of total number of units qulified for reimbursement by Medicaid.<br>
 				</ul>
-		</font></p>
+			</nav>
+	</font>
 </p>
-<h3 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_GEO.html">Previous Scene</a>  |  <a href="index_BQBS.html">Next Scene</a></h3> </center>
-
+<!-- <h3 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_GEO.html">Previous Scene</a>  |  <a href="index_BQBS.html">Next Scene</a></h3> </center> -->
+<h3 align = "center"> <a href="index_GEO.html">Previous Scene</a>  |  <a href="index_BQBS.html">Next Scene</a></h3> </center>
+</text>
 </body>
 </html>

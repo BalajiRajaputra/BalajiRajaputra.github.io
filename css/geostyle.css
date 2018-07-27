@@ -1,10 +1,4 @@
-#chart{
-    width: 880px;
-    height: 540px;
-	background-color: white;
-    /*background-color: #606060; */
-    margin: 25px auto;
-}
+
 #buttons{
     width: 800px;
     margin: 25px auto;
@@ -34,8 +28,8 @@ body {
 /* Legend Position Style */
 .legend {
 	position:absolute;
-	left:1080px;
-	top:250px;
+	left:1050px;
+	top:270px;
 }
 
 .axis text {
@@ -67,3 +61,4 @@ body {
     right: 16px;
     font-size: 18px;
 }
+

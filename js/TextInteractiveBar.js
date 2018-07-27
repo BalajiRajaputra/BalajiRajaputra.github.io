@@ -1,13 +1,11 @@
 
 var svg = d3.select("svg"),
-    margin = {top: 25, right: 25, bottom: 50, left: 75},
+    margin = {top: 50, right: 25, bottom: 40, left: 120},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom;
 
 var x = d3.scaleBand().range([0, width]),
     y = d3.scaleLinear().range([height, 0]);
-		
-		
 
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -31,6 +29,13 @@ d3.tsv("data/MedUtils1.tsv", function(d) {
   
   y.domain([0, d3.max(data, function(d) { return +d[selection]; })]);
   
+  
+   g.append("g")
+      .attr("class", "axis axis--y")
+	  .call(d3.axisLeft(y));
+	//  .call(d3.axisLeft(y).ticks(8).tickSizeInner([-width])); //This line shows the bars
+	
+	
   g.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
@@ -45,18 +50,17 @@ d3.tsv("data/MedUtils1.tsv", function(d) {
 	svg.append("text")
 	  .transition()
       .attr("transform", "rotate(-90)")
-      .attr("y", 90)
+      .attr("y", 130)
       .attr("dy", "0.35em")
       .attr("text-anchor", "end")
-      .text("Value");
+      .text("Value (Numbers)");
 
 
-  g.append("g")
-      .attr("class", "axis axis--y")
-	  .call(d3.axisLeft(y));
-	//  .call(d3.axisLeft(y).ticks(8).tickSizeInner([-width])); //This line shows the bars
+ 
 	
   g.selectAll(".bar")
+		.remove()
+					.exit()
     .data(data)
     .enter().append("rect")
       .attr("class", "bar")
@@ -79,22 +83,17 @@ d3.tsv("data/MedUtils1.tsv", function(d) {
         	selection = document.getElementById("dropdown");
 		
 		y.domain([0, d3.max(data, function(d) { return +d[selection.value]; })]);
-	
-	
-		//d3.axisLeft(y);
-		
 		
 		d3.select("g")
+		//g.append("g")
 		.attr("class", "axis axis--y")
 		.transition()
 		.call(d3.axisLeft(y));
-		//.call(d3.axisLeft(y).ticks(8).tickSizeInner([-width]));	
 	
 		x.domain(data.map(function(d) { return d.State; }));
 
 	g.append("g")
       .attr("class", "axis axis--x")
-	  //.transition()
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 		
@@ -129,7 +128,7 @@ d3.tsv("data/MedUtils1.tsv", function(d) {
       })
 	  
 	  
-	  
+	 /* 
 	 .on( 'mouseover', function(d) {
 		d3.select( '#tooltip')
 			.style("top", (event.pageY-10)+"px")
@@ -145,7 +144,7 @@ d3.tsv("data/MedUtils1.tsv", function(d) {
 			.style( 'display' ,'none')
 		
 	});
-	
+	*/
 	
 	
 });

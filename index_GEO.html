@@ -2,25 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>D3 Maps</title>
     <link rel="stylesheet" type="text/css" href="css/geostyle.css">
 	<link rel="stylesheet" href="css/theme/sky.css" id="theme"> 
-   
+   <style>
+Header {
+    position: absolute;
+    left: 460px;
+    top: 10px;
+}
+scene {
+    position: absolute;
+    left: 250px;
+    top: 10px;
+}
+text {
+    position: absolute;
+    left: 280px;
+    top: 600px;
+}
+</style>
 </head>
 <body>
-    <div id="chart"></div>
+	
+<Header> <h2> Medicaid Drug Utilization - Program Year 2017 <h2> </Header>
+
+   <scene> <div id="chart"></div> </scene>
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="js/appGeo.js"></script>
-	<br><br>
-	<p style="text-align:center;" style="font-family:arial;"> 
+	<text>
+	<p style="text-align:left;" style="font-family:arial;"> 
 	<font size="3">
-		 The choropleth map is to present an overview of the Medicaid proagram utilization in Uited States. The chart shows, lowest to the most progarm utilization within different states for Medicaid program year 2017.
-		 <br>
-		 Hover over on to the state to find the total Medicaid amount reimbrsed, information is displayed via the tooltip. The color legend represents the program utilization of total reimbusments. 
-		
-</font>	</p> <br>	
-
-<!--<center> <button onclick="location.href = 'index.html';" id="myButton" class="float-left submit-button" >Home</button></Strong> <button onclick="location.href = 'index_GEO.html';" id="myButton" class="float-left submit-button" >Next Scene</button>  </center> -->
-   <h2 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_TIBar.html">Next Scene</a></h2>
+		 The choropleth map is to present an overview of the Medicaid proagram utilization in Uited States. <br>
+		 The color legend represents from least to the most progarm utilization within different states.
+</font>	</p> 	<br> 	
+<!--   <h2 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_TIBar.html">Next Scene</a></h2> -->
+    <h2 align = "center"> <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_TIBar.html">Next Scene</a></h2>
+	</text>
+   <br><br>
 </body>
 </html>

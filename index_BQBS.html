@@ -5,26 +5,54 @@
     <title>D3 Bar Chart</title>
     <link rel="stylesheet" type="text/css" href="css/barstyle.css">
 	<link rel="stylesheet" href="css/theme/sky.css" id="theme"> 
+<style>
+Header {
+    position: absolute;
+    left: 540px;
+    top: 0px;
+}
+dropP {
+    position: absolute;
+    left: 980px;
+    top: 30px;
+}
+
+text {
+    position: absolute;
+    left: 200px;
+    top: 540px;
+}
+Scene {
+    position: absolute;
+    left: 200px;
+    top: 45px;
+}
+
+</style>
 </head>
 <body>
-    <div id="chart"></div>
+<Header><h2> Reimbursements </h2> </Header>
+    <div id="chart"></div> 
 	<div id="tooltip"></div>
-	<div id="drop" align=center></div> 
-	<svg width="960" height="500" ></svg>
+	<dropP> <div id="drop" align=center></div> </dropP> 
+	<Scene> <svg width="960" height="500" ></svg> </Scene>
     <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
     <script src="js/MedBQBS.js"></script>
-	
+<text>	
 <p style="text-align:justify;" style="font-family:arial;"> 
 	<font size="3">
-		The above bar chart is used to provide amount reimursed for each quarter by state for Medicaid program. <br>
-		The drop down menu at top of the scene has 5 options to choose. Select different parameters from drop down menu at the top of the scene to trigger an interactive visualization.
+		The above bar chart is to provide amount reimursed for each quarter by state for Medicaid program. <br>
+		The drop down menu at top of the scene has 5 options to choose. Select different parameters from drop down menu at the top of the scene to trigger an interactive visualization.<br>
+		<nav>
 		<ul>
-			<li>'Q1', 'Q2', 'Q3' & 'Q4' - parameters provide details of reimbursement amount for each quarter by state. </li>
+			<li>'Q1', 'Q2', 'Q3' & 'Q4' - parameters provide details of reimbursed amount for each quarter by state. </li>
 			<li>'Year' - parameter provides toal reimbursement payments by state for entire program year 2017. </li>
-		<ul>
-			
-		</font></p>
-<h3 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_TIBar.html">Previous Scene</a>  |  <a href="acknowledgement.html">Acknowledgement</a></h3> </center>
-
+		</ul>
+		</nav>	
+	</font>
+</p>
+<!-- <h3 align = "center"> <a href="index.html"> Home </a>  |  <a href="aboutvisualization.html">About Visualization</a>  |  <a href="index_TIBar.html">Previous Scene</a>  |  <a href="acknowledgement.html">Acknowledgement</a></h3> </center> -->
+<h3 align = "center"> <a href="index_TIBar.html">Previous Scene</a>  |  <a href="acknowledgement.html">Acknowledgement</a></h3> </center>
+</text>
 </body>
 </html>
